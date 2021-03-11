@@ -24,7 +24,7 @@ for name in files:
         shortname = path1.stem
         start_chatbot(shortname.replace(".py", ""))
 
-print("Your ChatBot is Ready. Thank @CyberBoyAyush ❤️")
+print("Your ChatBot is Ready. Thank @Xlaaf ❤️")
 print("Try Sending /start")
 
 if len(argv) not in (1, 3, 4):
