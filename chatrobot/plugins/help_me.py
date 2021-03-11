@@ -50,7 +50,7 @@ async def sedlyfsir(event):
             add_usersid_in_db(event.sender_id)
             await chatbot.send_message(Config.DUMB_CHAT, f"NEW USER ! \nUser ID : `{event.chat_id}`")
         await chatbot.send_file(event.chat_id, file=Config.CUSTOM_IMG, caption=text_me, buttons = [
-             [custom.Button.inline("I Want My Own Bot 🔥", data="mewant")],
+             [custom.Button.inline("Support", data="mewant")],
              [custom.Button.inline("Close 🔐", data="close ")],
               ]
              )
@@ -63,8 +63,8 @@ async def help(event):
         await event.edit(
             "You Can Deploy Your Own ChatBot By Repo Down There. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Repo⚔️", "https://github.com/CyberBoyAyush/TGChatBot")],
-                [Button.url("Need Help ❓", "t.me/CyberBoyAyushBot")],
+                [Button.url("Support", "https://t.me/vohaunion")],
+                [Button.url("Need Help ❓", "t.me/vohaunion")],
             ],
         )
         
